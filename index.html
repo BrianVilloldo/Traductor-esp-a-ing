@@ -1,0 +1,143 @@
+<html>
+
+<head>
+  <meta charset ="utf-8"/>
+	<link rel= "stylesheet" href="estilos/estilos.css"></link>
+</head>
+
+<body>
+
+<div id="divtitulo">
+  <h1 id="titulo">Traducir tu palabra</h1>
+  <input type= "text" id="palabra" onkeyup="mayus(this);">
+  <br>
+  <br>
+</div>
+
+<div id="divboton">
+  <input type ="button" id="boton" value="TRADUCIR" onclick="traducir()">
+  <h1 id="traduccion"> </h1>
+
+</div>
+
+<div id="divimagen">
+  <image id="imagen" src="imagenes/libro.png">
+</div>
+
+  <script>
+  function mayus(e) {
+    e.value = e.value.toUpperCase();
+}
+  function traducir(){
+    var palabra = document.getElementById("palabra").value;
+    palabra=palabra.toLowerCase()
+    switch (palabra) {
+
+      case "perro":
+        document.getElementById("traduccion").innerHTML = "DOG" ;
+        document.getElementById("imagen").src = "imagenes/perro.png" ;
+      break;
+      case "gato":
+        document.getElementById("traduccion").innerHTML = "CAT" ;
+        document.getElementById("imagen").src = "imagenes/gato.png" ;
+      break;
+      case "casa":
+        document.getElementById("traduccion").innerHTML = "HOUSE" ;
+        document.getElementById("imagen").src = "imagenes/casa.png" ;
+      break;
+      case "arbol":
+        document.getElementById("traduccion").innerHTML = "TREE" ;
+        document.getElementById("imagen").src = "imagenes/arbol.png" ;
+      break;
+      case "árbol":
+        document.getElementById("traduccion").innerHTML = "TREE" ;
+        document.getElementById("imagen").src = "imagenes/arbol.png" ;
+      break;
+      case "corazon":
+        document.getElementById("traduccion").innerHTML = "HEART" ;
+        document.getElementById("imagen").src = "imagenes/corazon.png" ;
+      break;
+      case "corazón" :
+        document.getElementById("traduccion").innerHTML = "HEART" ;
+        document.getElementById("imagen").src = "imagenes/corazon.png" ;
+      break;
+      case "luna":
+        document.getElementById("traduccion").innerHTML = "MOON" ;
+        document.getElementById("imagen").src = "imagenes/luna.png" ;
+      break;
+      case "sol":
+        document.getElementById("traduccion").innerHTML = "SUN" ;
+        document.getElementById("imagen").src = "imagenes/sol.png" ;
+      break;
+      case "pelota":
+        document.getElementById("traduccion").innerHTML = "BALL" ;
+        document.getElementById("imagen").src = "imagenes/pelota.png" ;
+      break;
+      case "torta":
+        document.getElementById("traduccion").innerHTML = "CAKE" ;
+        document.getElementById("imagen").src = "imagenes/torta.png" ;
+      break;
+      case "nube":
+        document.getElementById("traduccion").innerHTML = "CLOUD" ;
+        document.getElementById("imagen").src = "imagenes/nube.png" ;
+      break;
+
+      case "heroe":
+        document.getElementById("traduccion").innerHTML = "HERO" ;
+        document.getElementById("imagen").src = "imagenes/heroe.png" ;
+      break;
+      case "héroe":
+        document.getElementById("traduccion").innerHTML = "HERO" ;
+        document.getElementById("imagen").src = "imagenes/heroe.png" ;
+      break;
+
+      case "auto":
+        document.getElementById("traduccion").innerHTML = "CAR" ;
+        document.getElementById("imagen").src = "imagenes/auto.png" ;
+      break;
+      case "juguete":
+        document.getElementById("traduccion").innerHTML = "TOY" ;
+        document.getElementById("imagen").src = "imagenes/juguete.png" ;
+      break;
+      case "soldado":
+        document.getElementById("traduccion").innerHTML = "SOLDIER" ;
+        document.getElementById("imagen").src = "imagenes/soldado.png" ;
+      break;
+      case "mesa":
+        document.getElementById("traduccion").innerHTML = "TABLE" ;
+        document.getElementById("imagen").src = "imagenes/mesa.png" ;
+      break;
+      case "flores":
+        document.getElementById("traduccion").innerHTML = "FLOWERS" ;
+        document.getElementById("imagen").src = "imagenes/flor.png" ;
+      break;
+      case "flor":
+        document.getElementById("traduccion").innerHTML = "FLOWERS" ;
+        document.getElementById("imagen").src = "imagenes/flor.png" ;
+      break;
+      case "lluvia":
+        document.getElementById("traduccion").innerHTML = "RAIN" ;
+        document.getElementById("imagen").src = "imagenes/lluvia.png" ;
+      break;
+      case "dinosaurio":
+        document.getElementById("traduccion").innerHTML = "DINOSAR" ;
+        document.getElementById("imagen").src = "imagenes/dino.png" ;
+      break;
+      case "castillo":
+        document.getElementById("traduccion").innerHTML = "CASTLE" ;
+        document.getElementById("imagen").src = "imagenes/castillo.png" ;
+      break;
+
+      default:
+      document.getElementById("traduccion").innerHTML="ERROR";
+        document.getElementById("imagen").src = "imagenes/carita.png" ;
+
+
+    }
+}
+
+  </script>
+
+</body>
+
+</html>
